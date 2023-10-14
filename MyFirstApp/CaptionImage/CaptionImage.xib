@@ -10,7 +10,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
             <connections>
                 <outlet property="captionLabel" destination="WTI-rI-UJ3" id="BwM-EE-peO"/>
-                <outlet property="imageView" destination="HIw-yI-JqY" id="qUt-vF-vct"/>
+                <outlet property="contenView" destination="iN0-l3-epB" id="1FW-Uf-TaZ"/>
+                <outlet property="imageView" destination="HIw-yI-JqY" id="N86-ya-AAH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

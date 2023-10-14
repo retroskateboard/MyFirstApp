@@ -200,35 +200,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="206" translatesAutoresizingMaskIntoConstraints="NO" id="KMU-WL-GtI">
-                                <rect key="frame" x="0.0" y="103" width="430" height="829"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-W6-Uzw">
+                                <rect key="frame" x="0.0" y="103" width="430" height="795"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwV-cm-le4" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="430" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEV-Lk-UT7" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="265"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZI-7H-y8s" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="334" width="430" height="128"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoX-A6-DWu" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="265" width="430" height="265"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJt-8D-1s2" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="668" width="430" height="161"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztY-eG-5Cg" customClass="CaptionImage" customModule="MyFirstApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="530" width="430" height="265"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="MJt-8D-1s2" firstAttribute="top" secondItem="KMU-WL-GtI" secondAttribute="top" constant="668" id="FxT-Ti-cV9"/>
-                                    <constraint firstItem="rZI-7H-y8s" firstAttribute="top" secondItem="KMU-WL-GtI" secondAttribute="top" constant="334" id="hfu-4U-Zf9"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0lc-Go-s2n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KMU-WL-GtI" firstAttribute="trailing" secondItem="0lc-Go-s2n" secondAttribute="trailing" id="3au-EL-GSU"/>
-                            <constraint firstItem="KMU-WL-GtI" firstAttribute="top" secondItem="0lc-Go-s2n" secondAttribute="top" id="6K0-LA-2jg"/>
-                            <constraint firstAttribute="bottom" secondItem="KMU-WL-GtI" secondAttribute="bottom" id="aq6-Ng-BLd"/>
-                            <constraint firstItem="KMU-WL-GtI" firstAttribute="leading" secondItem="0lc-Go-s2n" secondAttribute="leading" id="rwn-ub-SU6"/>
+                            <constraint firstItem="1HG-W6-Uzw" firstAttribute="top" secondItem="0lc-Go-s2n" secondAttribute="top" id="ChD-VD-kCz"/>
+                            <constraint firstItem="1HG-W6-Uzw" firstAttribute="top" secondItem="0lc-Go-s2n" secondAttribute="top" id="JfV-BM-bzz"/>
+                            <constraint firstItem="1HG-W6-Uzw" firstAttribute="top" secondItem="0lc-Go-s2n" secondAttribute="top" id="dm5-de-MtC"/>
+                            <constraint firstItem="1HG-W6-Uzw" firstAttribute="leading" secondItem="0lc-Go-s2n" secondAttribute="leading" id="pUM-Vu-OAa"/>
+                            <constraint firstItem="0lc-Go-s2n" firstAttribute="trailing" secondItem="1HG-W6-Uzw" secondAttribute="trailing" id="tQB-1D-rSF"/>
+                            <constraint firstItem="0lc-Go-s2n" firstAttribute="bottom" secondItem="1HG-W6-Uzw" secondAttribute="bottom" id="vuR-46-dLe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NC3-NK-hjM">
@@ -239,14 +237,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="firstCaptionedImage" destination="kwV-cm-le4" id="W9E-Wb-Zle"/>
-                        <outlet property="secondCaptionedImage" destination="rZI-7H-y8s" id="ynO-hl-CmE"/>
-                        <outlet property="thirdCaptionedImage" destination="MJt-8D-1s2" id="vVm-O2-43l"/>
+                        <outlet property="firstCaptionImage" destination="mEV-Lk-UT7" id="lyo-4H-9k4"/>
+                        <outlet property="secondCaptionImage" destination="SoX-A6-DWu" id="wIx-pL-RhF"/>
+                        <outlet property="thirdcaptionImage" destination="ztY-eG-5Cg" id="SP5-3P-Uee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofA-la-ghd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2716.7441860465115" y="-3.218884120171674"/>
+            <point key="canvasLocation" x="2718" y="-3"/>
         </scene>
         <!--Share Controller-->
         <scene sceneID="rdE-ea-ftx">

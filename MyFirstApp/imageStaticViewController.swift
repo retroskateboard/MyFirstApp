@@ -11,25 +11,25 @@ class imageStaticViewController: UIViewController {
     
     var showDog = false
 
-    @IBOutlet weak var firstCaptionedImage: CaptionImage!
-    @IBOutlet weak var secondCaptionedImage: CaptionImage!
-    @IBOutlet weak var thirdCaptionedImage: CaptionImage!
+    @IBOutlet weak var firstCaptionImage: CaptionImage!
+    @IBOutlet weak var secondCaptionImage: CaptionImage!
+    @IBOutlet weak var thirdcaptionImage: CaptionImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if showDog {
-            firstCaptionedImage.imageView.image = UIImage(named: "shiba-1")
+            firstCaptionImage.imageView.image = UIImage(named: "shiba-1")
+            firstCaptionImage.captionLabel.text = "Dogo 1"
+            secondCaptionImage.imageView.image = UIImage(named: "shiba-2")
             
-            secondCaptionedImage.imageView.image = UIImage(named: "shiba-2")
-            
-            thirdCaptionedImage.imageView.image = UIImage(named: "shiba-3")
+            thirdcaptionImage.imageView.image = UIImage(named: "shiba-3")
         } else {
-            firstCaptionedImage.imageView.image = UIImage(named: "images-2")
+            firstCaptionImage.imageView.image = UIImage(named: "images-2")
             
-            secondCaptionedImage.imageView.image = UIImage(named: "images-3")
+            secondCaptionImage.imageView.image = UIImage(named: "images-3")
             
-            thirdCaptionedImage.imageView.image = UIImage(named: "images-4")
+            thirdcaptionImage.imageView.image = UIImage(named: "images-4")
         }
         // Do any additional setup after loading the view.
     }
